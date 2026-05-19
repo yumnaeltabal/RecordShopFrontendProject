@@ -1,0 +1,30 @@
+﻿#page-container{
+    background-color: lavender
+}
+.site-header {
+    background-color: lavenderblush;
+    padding: 20px;
+    text-align: center;
+}
+#title{
+    margin: 0;
+    color: skyblue;
+}
+#slogan{
+    margin: 0;
+    color: lightsteelblue;
+}
+.site-main{
+    flex: 1;
+    padding: 20px;
+}
+.site-footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+#footer{
+    text-align: center
+}

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\StyleSheet.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RecordShopFrontendProject.Client\RecordShopFrontendProject.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.24" />
   </ItemGroup>
