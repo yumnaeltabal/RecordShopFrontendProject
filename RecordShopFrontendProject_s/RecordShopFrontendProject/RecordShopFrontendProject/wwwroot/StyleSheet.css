@@ -28,3 +28,12 @@
 #footer{
     text-align: center
 }
+#homeTitle {
+    background-color: aliceblue;
+    color: blueviolet
+}
+
+.ListTitle {
+    background-color: azure;
+    color: blueviolet
+}

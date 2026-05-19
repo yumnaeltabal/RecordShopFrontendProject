@@ -1,5 +1,24 @@
-﻿<h3>AlbumsSummaryList</h3>
+﻿@using RecordShopFrontendProject.Models
+@using Microsoft.AspNetCore.Components
+
+<h3 class="ListTitle">List Of Albums</h3>
+
+<div class="container">
+     @foreach (var album in Albums)
+        {
+            <AlbumSummary Album="@album" />
+        }
+</div>
+
 
 @code {
-
+    [Parameter]
+    public List<Album> Albums { get; set; } = new List<Album>()
+    {
+        new Album("Shape of You", "Ed Sheeran", 2017, "Pop"),
+        new Album("Uptown Funk", "Mark Ronson ft. Bruno Mars", 2014, "Funk/Pop"),
+        new Album("Happy", "Pharrell Williams", 2013, "Pop"),
+        new Album("Shake It Off", "Taylor Swift", 2014, "Pop"),
+        new Album("Someone Like You", "Adele", 2011, "Pop")
+    };
 }
