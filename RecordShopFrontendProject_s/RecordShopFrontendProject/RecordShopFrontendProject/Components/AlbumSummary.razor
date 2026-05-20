@@ -1,12 +1,20 @@
 ﻿@using RecordShopFrontendProject.Models
 @using Microsoft.AspNetCore.Components
 
-<h3>Album @Album.Title</h3>
-<div>
-    <p><strong>Artist:</strong> @Album.Artist</p>
-    <p><strong>Year:</strong> @Album.ReleaseYear</p>
-    <p><strong>Genre:</strong> @Album.Genre</p>
+
+<div class="card">
+    <div class="card-header">
+        <p><strong>Artist:</strong> @Album.Artist</p>
+        <p><strong>Release Year:</strong> @Album.ReleaseYear</p>
+        <p><strong>Genre:</strong> @Album.Genre</p>
+    </div>
+    <footer class="card-footer">
+        <a href="@($"/albums/{Album.Id}")"
+           class="card-footer-item">View Details</a>
+    </footer>
 </div>
+
+
 
 @code {
     [Parameter]
