@@ -37,3 +37,13 @@
     background-color: azure;
     color: blueviolet
 }
+.card {
+    background-blend-mode: color-burn;
+    display: inline-flex;
+    width:300px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
